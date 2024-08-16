@@ -4,3 +4,78 @@
     border-radius: 50%;
     margin-right: 15px;
   }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+  }
+  
+
+  
+  .icon-button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 10px;
+    padding: 0;
+    flex-direction: column;
+  }
+  
+  .button-text {
+    display: none; 
+  }
+  
+  /* Estilos adicionales para dispositivos móviles */
+  @media (max-width: 768px) {
+    .buttons {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  
+    .icon-button {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media (min-width: 769px) {
+    .icon-button {
+      width: auto;
+      height: auto;
+      border-radius: 20px;
+      padding: 10px 20px;
+      flex-direction: row; 
+    }
+  
+    .icon-button .fa-icon {
+      margin-right: 8px; 
+    }
+  
+    .button-text {
+      display: inline; 
+    }
+  }
+  
