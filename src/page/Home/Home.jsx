@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import reactLogo from "../../assets/react.svg";
+import profileImage from "../../assets/Angel.jpg";
+import Button from 'react-bootstrap/Button';
 import "./Home.css";
 
 const Home = () => {
@@ -20,7 +22,7 @@ const Home = () => {
           <>
             {/* <img src="path-to-your-image.jpg" alt="Principal" className="main-image" /> */}
              <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-        <img src={reactLogo} className="logo react" alt="React logo" />
+        <img src={profileImage} className="name-image" alt="React logo" />
       </a>
       <h1>Ángel Fernández Bravo</h1>
       <h3>Proyecto inicial AuJ</h3>
@@ -36,10 +38,11 @@ const Home = () => {
     <div className="main-content">
       {renderContent()}
       <div className="buttons">
-        <button onClick={() => setActiveSection('/')}>Sobre mí</button>
-        <button onClick={() => setActiveSection('projects')}>Proyectos</button>
-        <button onClick={() => setActiveSection('skills')}>Habilidades</button>
-        <button onClick={() => setActiveSection('contact')}>Contacto</button>
+        <Button variant="outline-info"onClick={() => setActiveSection('/')} >Sobre mí</Button>
+        <Button variant="outline-info" onClick={() => setActiveSection('/')}>Sobre mí</Button>
+        <Button variant="outline-info" onClick={() => setActiveSection('projects')}>Proyectos</Button>
+        <Button onClick={() => setActiveSection('skills')}>Habilidades</Button>
+        <Button onClick={() => setActiveSection('contact')}>Contacto</Button>
       </div>
     </div>
   );
