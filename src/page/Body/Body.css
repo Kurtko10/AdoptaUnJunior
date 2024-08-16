@@ -1,0 +1,12 @@
+body {
+    width: 100%;
+    margin: 0 0;
+    padding: 0;
+    background-image: url('../../img/fondo2.jpg'); 
+    background-size:cover;
+    background-position: center; 
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+
+  
