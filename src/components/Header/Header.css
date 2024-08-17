@@ -1,0 +1,15 @@
+.header {    
+    top: 0;
+    width: 100%;          
+    color: white;       
+    text-align: center; 
+    padding: 5px 0;    
+    z-index: 1000;     
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header h1 {
+    margin: 0;         
+    font-size: 24px;    
+  }
+  

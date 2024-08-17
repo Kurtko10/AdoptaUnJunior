@@ -3,7 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faProjectDiagram, faTools, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import profileImage from "../../assets/Angel.jpg";
 import projectImage from "../../assets/18697.jpg";
-import whyImage from "../../assets/why-2028047_640.png"
+import whyImage from "../../assets/why-2028047_640.png";
+import MasterMindImage from "../../assets/mastermind.jpg";
+import GameBoyImage from "../../assets/gameboy.jpg";
+import TattoImage from "../../assets/Tattoo.jpg";
+import TallerImage from "../../assets/Taller.jpg";
 import Button from 'react-bootstrap/Button';
 import "./Home.css";
 import Card from "../../components/Card/Card";
@@ -17,18 +21,42 @@ const Home = () => {
         return <Card 
         imageSrc={projectImage}
         title="Proyectos"
-        
-        content="Pmmmmmmmmmmmmmmmmmmmmmm."
+        content={
+          <>
+            <p>Aquí están algunos de mis proyectos en GitHub:</p>
+            <div className="project-links">
+              <a href="https://github.com/tu-usuario/proyecto-1" target="_blank" rel="noopener noreferrer">
+                <img src={GameBoyImage} alt="Proyecto 1" className="project-image" />
+              </a>
+              <a href="https://github.com/tu-usuario/proyecto-2" target="_blank" rel="noopener noreferrer">
+                <img src={MasterMindImage} alt="Proyecto 2" className="project-image" />
+              </a>
+              <a href="https://github.com/tu-usuario/proyecto-3" target="_blank" rel="noopener noreferrer">
+                <img src={TattoImage} alt="Proyecto 3" className="project-image" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={TallerImage} alt="Proyecto 4" className="project-image" />
+              </a>
+              
+            </div>
+          </>
+        }
       />
+      
       case 'why':
         return <Card 
         imageSrc={whyImage}
         title="¿Por qué?"
         
-        content="Deseo formar parte de los grupos de trabajo porque creo que es una gran oportunidad de ganar experiencia en proyectos reales. 
-        Como Junior, participar en un proyecto conjuntamente con otros compañeros, compartiendo opiniones y desarrollando soluciones reales, genera una gran motivación de formar parte, y además nos ayuda a conocer como se trabajen el sector.
-        Considero que formar parte de los grupos de trabajos de #AdoptaUnJunior puede ser lo que me ayude a saltar el muro de la 'falta de experiencia' y conseguir encontrar mi primer empleo en el sector
-        "
+        content=
+        {
+          <div dangerouslySetInnerHTML={{ __html: `Deseo formar parte de los grupos de trabajo porque creo que es una gran oportunidad de ganar experiencia en proyectos reales. <br/>
+        Como Junior, participar en un proyecto conjuntamente con otros compañeros, compartiendo opiniones y desarrollando soluciones reales, genera una gran motivación de formar parte, y además nos ayuda a conocer como se trabajen el sector. <br/>
+        Considero que formar parte de los grupos de trabajos de #AdoptaUnJunior puede ser lo que me ayude a saltar el muro de la 'falta de experiencia' y conseguir encontrar mi primer empleo en el sector. <br/>
+        ¡¡¡Espero ser elegido para el FrontEnd!!!
+
+        ` }} />
+        }
       />
       case 'contact':
         return <p>Contacto: Aquí puedes contactarme.</p>;
@@ -39,9 +67,9 @@ const Home = () => {
         imageSrc={profileImage}
         title="Ángel Fernández Bravo"
         subtitle="Sobre mí"
-        content="Hace dos años decidí iniciarme en el mundo de la programación. Como primer contacto con la programación realicé un curso de desarrollo web en .Net, después realicé una formación en la cual aprendí el lenguaje PHP.
-        Al final de 2023, comencé un BootCamp de Desarrollo Full Stack en GeeksHubs Academy. En el que adquirí profundos conocimientos de HTML, CSS, JavaScript, TypeScript o React.
-        Ahora mismo estoy a la espera de tener mi primera oportunidad en el sector para demostrar todo lo aprendido"
+        content={
+    <div dangerouslySetInnerHTML={{ __html: `Hace dos años decidí iniciarme en el mundo de la programación.<br/>Como primer contacto en este mundo, realicé un curso de desarrollo web en .Net, seguido de una formación en la cual aprendí el lenguaje PHP.<br/>Al final de 2023, comencé un BootCamp de Desarrollo Full Stack en GeeksHubs Academy, en el que adquirí profundos conocimientos de HTML, CSS, JavaScript, TypeScript o React entre otras herramientas.<br/>Ahora mismo estoy a la espera de tener mi primera oportunidad en el sector para demostrar todo lo aprendido.` }} />
+  }
       />
           </>
         );
