@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faProjectDiagram, faTools, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import profileImage from "../../assets/Angel.jpg";
+import projectImage from "../../assets/18697.jpg";
+import whyImage from "../../assets/why-2028047_640.png"
 import Button from 'react-bootstrap/Button';
 import "./Home.css";
+import Card from "../../components/Card/Card";
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -11,20 +14,35 @@ const Home = () => {
   const renderContent = () => {
     switch (activeSection) {
       case 'projects':
-        return <p>Proyectos: Aquí están mis proyectos.</p>;
+        return <Card 
+        imageSrc={projectImage}
+        title="Proyectos"
+        
+        content="Pmmmmmmmmmmmmmmmmmmmmmm."
+      />
       case 'why':
-        return <p>¿Por qué?: Creo que debo ser elegido para los grupos de trabajo por....</p>;
+        return <Card 
+        imageSrc={whyImage}
+        title="¿Por qué?"
+        
+        content="Deseo formar parte de los grupos de trabajo porque creo que es una gran oportunidad de ganar experiencia en proyectos reales. 
+        Como Junior, participar en un proyecto conjuntamente con otros compañeros, compartiendo opiniones y desarrollando soluciones reales, genera una gran motivación de formar parte, y además nos ayuda a conocer como se trabajen el sector.
+        Considero que formar parte de los grupos de trabajos de #AdoptaUnJunior puede ser lo que me ayude a saltar el muro de la 'falta de experiencia' y conseguir encontrar mi primer empleo en el sector
+        "
+      />
       case 'contact':
         return <p>Contacto: Aquí puedes contactarme.</p>;
       default:
         return (
           <>
-            <img src={profileImage} className="name-image" alt="Profile" />
-            <h1>Ángel Fernández Bravo</h1>
-            <h3>Proyecto inicial AuJ</h3>
-            <h6>Proyecto para optar a formar parte de los grupos de trabajo AuJ.</h6>
-            <p>Creo que es una gran oportunidad para poder formar parte de proyectos reales y así mejorar mi perfil en el sector</p>
-            <p>Este es el texto principal debajo de la foto.</p>
+            <Card 
+        imageSrc={profileImage}
+        title="Ángel Fernández Bravo"
+        subtitle="Sobre mí"
+        content="Hace dos años decidí iniciarme en el mundo de la programación. Como primer contacto con la programación realicé un curso de desarrollo web en .Net, después realicé una formación en la cual aprendí el lenguaje PHP.
+        Al final de 2023, comencé un BootCamp de Desarrollo Full Stack en GeeksHubs Academy. En el que adquirí profundos conocimientos de HTML, CSS, JavaScript, TypeScript o React.
+        Ahora mismo estoy a la espera de tener mi primera oportunidad en el sector para demostrar todo lo aprendido"
+      />
           </>
         );
     }
