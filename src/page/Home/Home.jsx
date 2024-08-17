@@ -8,6 +8,10 @@ import MasterMindImage from "../../assets/mastermind.jpg";
 import GameBoyImage from "../../assets/gameboy.jpg";
 import TattoImage from "../../assets/Tattoo.jpg";
 import TallerImage from "../../assets/Taller.jpg";
+import ContactoImage from "../../assets/smartphone-564155_1280.jpg";
+import LinkdinImage from "../../assets/linkedin-2815918_1280.jpg";
+import GitHubImage from "../../assets/github.png";
+import EmailImage from "../../assets/spider-monkey-637060_1280.jpg";
 import Button from 'react-bootstrap/Button';
 import "./Home.css";
 import Card from "../../components/Card/Card";
@@ -59,7 +63,26 @@ const Home = () => {
         }
       />
       case 'contact':
-        return <p>Contacto: Aquí puedes contactarme.</p>;
+        return <Card 
+        imageSrc={ContactoImage}
+        title="Aquí puedes contactar conmigo"
+        content={
+          <>
+            <div className="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={LinkdinImage} alt="Proyecto 1" className="project-image" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={GitHubImage} alt="Proyecto 2" className="project-image" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={EmailImage} alt="Proyecto 3" className="project-image" />
+              </a>
+              
+            </div>
+          </>
+        }
+      />
       default:
         return (
           <>
