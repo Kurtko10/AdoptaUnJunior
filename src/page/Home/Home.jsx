@@ -29,16 +29,16 @@ const Home = () => {
           <>
             <p>Aquí están algunos de mis proyectos en GitHub:</p>
             <div className="project-links">
-              <a href="https://github.com/tu-usuario/proyecto-1" target="_blank" rel="noopener noreferrer">
+              <a href="" >
                 <img src={GameBoyImage} alt="Proyecto 1" className="project-image" />
               </a>
-              <a href="https://github.com/tu-usuario/proyecto-2" target="_blank" rel="noopener noreferrer">
+              <a href="">
                 <img src={MasterMindImage} alt="Proyecto 2" className="project-image" />
               </a>
-              <a href="https://github.com/tu-usuario/proyecto-3" target="_blank" rel="noopener noreferrer">
+              <a href="">
                 <img src={TattoImage} alt="Proyecto 3" className="project-image" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="#">
                 <img src={TallerImage} alt="Proyecto 4" className="project-image" />
               </a>
               
@@ -70,13 +70,13 @@ const Home = () => {
           <>
             <div className="project-links">
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={LinkdinImage} alt="Proyecto 1" className="project-image" />
+                <img src={LinkdinImage} alt="Linkdin" className="project-image" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={GitHubImage} alt="Proyecto 2" className="project-image" />
+                <img src={GitHubImage} alt="GitHub Logo" className="project-image" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={EmailImage} alt="Proyecto 3" className="project-image" />
+                <img src={EmailImage} alt="Email" className="project-image" />
               </a>
               
             </div>
