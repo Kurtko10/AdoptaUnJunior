@@ -29,16 +29,16 @@ const Home = () => {
           <>
             <p>Aquí están algunos de mis proyectos en GitHub:</p>
             <div className="project-links">
-              <a href="" >
+              <a href="https://github.com/Kurtko10/proyectoVideojuego" target="_blank" rel="noopener noreferrer">
                 <img src={GameBoyImage} alt="Proyecto 1" className="project-image" />
               </a>
-              <a href="">
+              <a href="https://github.com/Kurtko10/mastermind" target="_blank" rel="noopener noreferrer">
                 <img src={MasterMindImage} alt="Proyecto 2" className="project-image" />
               </a>
-              <a href="">
+              <a href="https://github.com/Kurtko10/estudio-tatuaje-front" target="_blank" rel="noopener noreferrer">
                 <img src={TattoImage} alt="Proyecto 3" className="project-image" />
               </a>
-              <a href="#">
+              <a href="https://github.com/Kurtko10/taller-front" target="_blank" rel="noopener noreferrer">
                 <img src={TallerImage} alt="Proyecto 4" className="project-image" />
               </a>
               
