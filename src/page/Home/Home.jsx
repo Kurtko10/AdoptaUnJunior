@@ -69,15 +69,15 @@ const Home = () => {
         content={
           <>
             <div className="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/angel-fb/" target="_blank" rel="noopener noreferrer">
                 <img src={LinkdinImage} alt="Linkdin" className="project-image" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Kurtko10" target="_blank" rel="noopener noreferrer">
                 <img src={GitHubImage} alt="GitHub Logo" className="project-image" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={EmailImage} alt="Email" className="project-image" />
-              </a>
+              <a href="mailto:kurtkoaf@gmail.com" target="_blank" rel="noopener noreferrer">
+      <img src={EmailImage} alt="Email" className="project-image" />
+    </a>
               
             </div>
           </>
